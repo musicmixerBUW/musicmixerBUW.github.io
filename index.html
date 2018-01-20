@@ -5,6 +5,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+		var x = document.getElementById("Bassdrum.wav");
+		function setCurTime() {
+			x.currentTime=4;
+		}
+		</script>
 	</head>
 	<body>
 		<!-- Wrapper -->
@@ -30,13 +36,7 @@
     						Your browser does not support the audio element.	
 							</audio>
 						<p>
-						<button onclick="setCurTime()" type="button">Audio auf 4 Sekunden setzen</button> 
-						<script>
-						var x = document.getElementById("Bassdrum.wav");
-						function setCurTime() {
-							x.currentTime=4;
-						}
-						</script>	
+						<button onclick="setCurTime()" type="button">Audio auf 4 Sekunden setzen</button> 	
 							</p>
 						</div>	
 					</section>
