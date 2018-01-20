@@ -5,16 +5,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script>
-			var x = document.getElementById("Bassdrum.wav");
-			function setCurTime() {
-				x.currentTime = 4;
-			}
-		</script>
-		<audio id="Bassdrum.wav" controls>
-			<source src="Bassdrum.wav" type="audio/wav">
-			Your browser does not support the audio element.
-		</audio>
 	</head>
 	<body>
 		<!-- Wrapper -->
@@ -30,9 +20,9 @@
 				<!-- Main -->
 					<section id="main">
 						<div align="center">	
-						<audio controls loop>
-       							<source src="Bassdrum.wav" type"audio/wav">
-    						Your browser does not support the audio element.
+						<audio id="Bassdrum.wav" controls>
+							<source src="Bassdrum.wav" type="audio/wav">
+						Your browser does not support the audio element.
 							</audio>
 						<p></p>
 						<audio controls loop>
@@ -41,6 +31,12 @@
 							</audio>
 						<p></p>
 						<button onclick="setCurTime()" type="button">Audio auf 4 Sekunden setzen</button>
+						<script>
+							var x = document.getElementById("Bassdrum.wav");
+							function setCurTime() {
+							x.currentTime = 4;
+							}
+						</script>
 						</div>	
 					</section>
 
