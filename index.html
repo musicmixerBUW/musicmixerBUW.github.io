@@ -25,22 +25,22 @@
 						Your browser does not support the audio element.
 							</audio>
 						<p></p>
-						<audio id="Grundbeat" controls class="audiodatei">
+						<audio id="Grundbeat" class="audiodatei" controls>
 							<source src="Grundbeat.wav" type="audio/wav">
 						Your browser does not support the audio element.
 							</audio>
 						<p></p>	
-						<audio id="Drums" controls class="audiodatei">
+						<audio id="Drums" class="audiodatei" controls>
 							<source src="Drums.wav" type="audio/wav">
 						Your browser does not support the audio element.
 							</audio>
 						<p></p>	
-						<audio id="Klingelwürfel" controls class="audiodatei">
+						<audio id="Klingelwürfel" class="audiodatei" controls>
 							<source src="Klingelwürfel.wav" type="audio/wav">
 						Your browser does not support the audio element.
 							</audio>
 						<p></p>	
-						<audio id="Telefone" controls class="audiodatei">
+						<audio id="Telefone" class="audiodatei" controls>
 							<source src="Telefone.wav" type="audio/wav">
 						Your browser does not support the audio element.
 							</audio>	
@@ -49,7 +49,7 @@
 						<button onclick="setCurTime()" type="button">Audio zurücksetzen</button>
 						</div>
 						<script type>
-							var x = document.getElementsByClassName("audiodatei");
+							var x = document.getElementsByClassName('audiodatei');
 							function setCurTime() {
 							x.currentTime = 0;
 							}
