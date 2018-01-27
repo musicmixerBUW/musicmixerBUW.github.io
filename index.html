@@ -51,7 +51,8 @@
 						<script type>
 							var x = document.getElementsByClassName('audiodatei');
 							function setCurTime() {
-							x.currentTime = 0;
+							for(var i=0; i<x.length; i++)
+							{x[i].currentTime = 0;}
 							}
 						</script>
 						</div>	
