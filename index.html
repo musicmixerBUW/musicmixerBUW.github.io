@@ -24,6 +24,22 @@
 							<source src="Geräusche-Song FULL.wav" type="audio/wav">
 						Your browser does not support the audio element.
 							</audio>
+						<audio id="GrundBeat" controls>
+							<source src="GrundBeat.wav" type="audio/wav">
+						Your browser does not support the audio element.
+							</audio>
+						<audio id="Drums" controls>
+							<source src="Drums.wav" type="audio/wav">
+						Your browser does not support the audio element.
+							</audio>
+						<audio id="Klingelwürfel" controls>
+							<source src="Klingelwürfel.wav" type="audio/wav">
+						Your browser does not support the audio element.
+							</audio>
+						<audio id="Telefone" controls>
+							<source src="Telefone.wav" type="audio/wav">
+						Your browser does not support the audio element.
+							</audio>	
 						<p></p>
 						<audio controls>
        							<source src="Grundbeat.wav" type"audio/wav">
@@ -45,10 +61,14 @@
     						Your browser does not support the audio element.	
 							</audio>	
 						<div align="center">
-						<button onclick="setCurTime()" type="button">Audio auf 4 Sekunden setzen</button>
+						<button onclick="setCurTime()" type="button">Audio zurücksetzen</button>
 						</div>
 						<script type>
 							var x = document.getElementById("GrundBeat.wav");
+							function setCurTime() {
+							x.currentTime = 0;
+							}
+							var x = document.getElementById("Drums.wav");
 							function setCurTime() {
 							x.currentTime = 0;
 							}
